@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CCAFFE</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon.png">
+
+    <!-- ==폰트== -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean" rel="stylesheet">
+    <!-- ==스크립트== -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+    </script>
+    <!-- ===css스타일=== -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/notice.css">
+    <!-- ==스타일== -->
+    <style>
+        .section{
+            width:68%;
+            margin:50px auto;
+        }
+        .section>.title{
+            margin:10px;
+        }
+        .section>.grid{
+            text-align:center;
+        }
+        h2{
+            color:darkblue;
+            font-size:24px;
+            font-weight:bold;
+        }
+        p{
+            color:darkblue;
+        }
+        .grid{
+            box-sizing:border-box;
+            display:grid;
+            grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+            grid-gap:2px;
+            background:black;
+            padding:2px;
+            width:808px;
+        }
+        .grid>div{
+            background:white;
+            text-align:center;
+            padding:10px 0;
+            font-size:20px;
+            color:darkblue;
+        }
+        .grid>#table1,.grid>#table2,.grid>#table3{
+            background:#90caf4;
+        }
+        #table1{
+            grid-area:1/1/2/3;
+        }
+        #table2{
+            grid-area:1/3/2/6;
+        }
+        #table3{
+            grid-area:1/6/2/14;
+        }
+        #table4{
+            grid-area:2/1/3/3;
+        }
+        #table5{
+            grid-area:2/3/3/6;
+        }
+        #table6{
+            grid-area:2/6/3/14;
+        }
+        #table7{
+            grid-area:3/1/4/3;
+        }
+        #table8{
+            grid-area:3/3/4/6;
+        }
+        #table9{
+            grid-area:3/6/4/14;
+        }
+        #table10{
+            grid-area:4/1/5/3;
+        }
+        #table11{
+            grid-area:4/3/5/6;
+        }
+        #table12{
+            grid-area:4/6/5/14;
+        }
+        #table13{
+            grid-area:5/1/6/3;
+        }
+        #table14{
+            grid-area:5/3/6/6;
+        }
+        #table15{
+            grid-area:5/6/6/14;
+        }
+        #table16{
+            grid-area:6/1/7/3;
+        }
+        #table17{
+            grid-area:6/3/7/6;
+        }
+        #table18{
+            grid-area:6/6/7/14;
+        }
+        #table19{
+            grid-area:7/1/8/3;
+        }
+        #table20{
+            grid-area:7/3/8/6;
+        }
+        #table21{
+            grid-area:7/6/8/14;
+        }
+        #table22{
+            grid-area:8/1/9/3;
+        }
+        #table23{
+            grid-area:8/3/9/6;
+        }
+        #table24{
+            grid-area:8/6/9/14;
+        }
+        #table25{
+            grid-area:9/1/10/3;
+        }
+        #table26{
+            grid-area:9/3/10/6;
+        }
+        #table27{
+            grid-area:9/6/10/14;
+        }
+        #table28{
+            grid-area:10/1/11/3;
+        }
+        #table29{
+            grid-area:10/3/11/6;
+        }
+        #table30{
+            grid-area:10/6/11/14;
+        }
+        #table31{
+            grid-area:11/1/12/3;
+        }
+        #table32{
+            grid-area:11/3/12/6;
+        }
+        #table33{
+            grid-area:11/6/12/14;
+        }
+        #last{
+            margin-top:20px;
+            color:green;
+            font-weight:bold;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div id="logo">
+                <a href="index.html"><h1 class="logo_tit">CCAFFE</h1></a>
+                <a href="#"><img src="images/logo.png" alt="로고"></a>
+            </div>
+            <div class="notice">
+                <h1 class="not_tit">CONTACT</h1>
+            </div>
+            <nav class="nav">
+                <ul class="clearfix">
+                    <li><a href="contact1.html">개설안내</a></li>
+                    <li><a href="contact2.html">가맹문의</a></li>
+                    <li><a href="contact3.html">투자안내</a></li>
+                </ul>
+            </nav>
+            <ul id="tgl_btn">
+                <li id="line01"></li>
+                <li id="line02"></li>
+                <li id="line03"></li>
+            </ul>
+        </header>
+        <section class="section">
+            <div class="title">
+                <h2>투자 비용</h2>
+                <br>
+                <p>
+                    창업시 투자비용에 대해 알려드립니다.
+                </p>
+            </div>
+            <br>
+            <br>
+            <div class="grid">
+                <div id="table1">항목</div>
+                <div id="table2">금액</div>
+                <div id="table3">내용</div>
+                <div id="table4">총액</div>
+                <div id="table5">114,000,000원</div>
+                <div id="table6">예상금액으로 매장 상황에 따라 변동될 수 있음</div>
+                <div id="table7">로열티</div>
+                <div id="table8">250,000원 / 월</div>
+                <div id="table9">상호 상표사용료 및 경영지원에 대한 대가</div>
+                <div id="table10">가맹비</div>
+                <div id="table11">12,000,000원</div>
+                <div id="table12">
+                    CCAFFE 상호 사용권 부여
+                    <br>
+                    지역 영업권 보장
+                    <br>
+                    상권 조사 및 점포운영 교육 및 Know-How 제공
+                </div>
+                <div id="table13">홍보비</div>
+                <div id="table14">2,000,000원</div>
+                <div id="table15">
+                    전단지,홍보요원,풍선아치,행사용품등
+                    <br>
+                    오픈행사 2일간 진행
+                </div>
+                <div id="table16">보증금</div>
+                <div id="table17">5,000,000원</div>
+                <div id="table18">
+                    본사에서 공급하는 원부자제에 대한 예치금
+                    <br>
+                    가맹계약 해지시 반환
+                </div>
+                <div id="table19">초도물품</div>
+                <div id="table20">8,000,000원</div>
+                <div id="table21">최초 오픈 시 각종 원/부재료 세팅 금액</div>
+                <div id="table22">인테리어</div>
+                <div id="table23">60,000,000원</div>
+                <div id="table24">
+                    내장공사 20평 기준(실사 및 메뉴얼/도면 제공비 포함)
+                    <br>
+                    바닥공사,설비공사,전기공사,벽제공사
+                </div>
+                <div id="table25">의탁자</div>
+                <div id="table26">9,000,000원</div>
+                <div id="table27">내부 테이블, 의자</div>
+                <div id="table28">외부사인</div>
+                <div id="table29">5,000,000원</div>
+                <div id="table30">
+                    전면간판,전면 이닝 각 1조(5M 기준)
+                    <br>
+                    간판 후면 금속
+                </div>
+                <div id="table31">기기설비</div>
+                <div id="table32">30,000,000원</div>
+                <div id="table33">에스프레소 머신(2구), 정수기, 그라인더, 온수기, 제빙기, 냉장고, 블렌더 등</div>
+            </div>
+            <div id="last">
+                * 매장별로 상이할 수 있습니다.
+            </div>
+        </section>
+    </div>
+</body>
+</html>

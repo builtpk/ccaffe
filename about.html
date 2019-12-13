@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CCAFFE</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon.png">
+
+    <!-- ==폰트== -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean" rel="stylesheet">
+    <!-- ==스크립트== -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+    </script>
+    <!-- ===css스타일=== -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/notice.css">
+    <!-- ==스타일== -->
+    <style>
+        .section{
+            width:960px;
+            height:900px;
+            left:50px;
+            top:20px;
+        }
+        h2{color:darkblue;font-weight:bold;font-size:24px;}
+        .text_bottom{color:#4e3517;font-weight:bold;}
+        .line{color:blue;}
+        .box>.text,.box>.image{display: inline-block;}
+        .box>.text{width:40%;}
+        .box>.image{width:40%;}
+        .box01>.image,.box03>.image,.box02>.text{float:right;}
+        .box02>.image,.box01>.text,.box03>.text{float:left;}
+        .text_top{
+            display:flex;
+        }
+        .image{
+            
+        }
+        .clearfix::after{display:block;content:"";overflow:hidden;}
+        .box01,.box02,.box03{margin-bottom:20px;}
+
+
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div id="logo">
+                <a href="index.html"><h1 class="logo_tit">CCAFFE</h1></a>
+                <a href="#"><img src="images/logo.png" alt="로고"></a>
+            </div>
+            <div class="notice">
+                <h1 class="not_tit">ABOUT</h1>
+            </div>
+            <nav class="nav">
+                <ul class="clearfix">
+                    <li><a href="about.html">브랜드 소개</a></li>
+                    <li><a href="about2.html">인사말</a></li>
+                    <li><a href="about3.html">오시는길</a></li>
+                </ul>
+            </nav>
+            <ul id="tgl_btn">
+                <li id="line01"></li>
+                <li id="line02"></li>
+                <li id="line03"></li>
+            </ul>
+        </header>
+        <section class="section">
+            <div class="box box01 clearfix">
+                <div class="text">
+                    <div class="text_top">
+                        <h2>한잔의 여유와 진심</h2>
+                        <img src="images/cup.png" alt="컵">
+                    </div>
+                    <br>
+                    <div class="text_bottom">
+                        해외에 로열티를 내지 않는 순수
+                        <br>
+                        국내 브랜드로서 품질 좋고 맛있는
+                        <br>
+                        커피와 음료를 합리적인 가격으로
+                        <br>
+                        소비자에게 지공하는 것을 원칙으로
+                        <br>
+                        합니다.
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="images/cappucino.png" alt="카푸치노">
+                </div>          
+            </div>
+            <div class="line"></div>
+            <div class="box box02 clearfix">
+                <div class="image">
+                    <img src="images/cafe.png" alt="점포">
+                </div>
+                <div class="text">
+                    <div class="text_top">
+                        <h2>상생협력</h2>
+                        <img src="images/cup.png" alt="컵">
+                    </div>
+                    <br>        
+                    <div class="text_bottom">
+                        저희는 고객, 가맹점주와의 정직과
+                        <br>
+                        신뢰를 기반으로 구축되었습니다.
+                        <br>
+                        고객들에겐 우리의 진심을 제공하고,
+                        <br>
+                        가맹점주에게는 다양한 지원정책으로
+                        <br>
+                        미래의 성공으로 인도하도록 아낌없는
+                        <br>
+                        지원을 하고 있습니다.
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="box box03 clearfix">
+                <div class="text">
+                    <div class="text_top">
+                        <h2>최상의 원두 사용</h2>
+                        <img src="images/beans.png" alt="원두">
+                    </div>
+                    <br>        
+                    <div class="text_bottom">
+                        저희 브랜드는 검증받고 엄선된
+                        <br>
+                        원두를 사용하여 커피를 제조하며
+                        <br>
+                        항상 최상의 맛과 품질을 유지하여
+                        <br>
+                        고객들이 안심하고 즐기도록 하고
+                        <br>
+                        있습니다.
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="images/beans3.png" alt="원두사진">
+                </div>
+            </div>
+        </section>
+        
+    </div>
+</body>
+</html>

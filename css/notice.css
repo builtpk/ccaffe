@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+#wrap{width:100%;position: relative;}
+/* ==header== */    
+
+#logo{position:relative;}
+#logo img{padding:5px 10px;position:absolute;top:-15px;}
+h1{font-weight:bold;color:#4e3517;}
+.notice{height:50px;background:#90caf4;}
+.logo_tit{font-size:25px;text-align:center;margin:15px 0;}
+.not_tit{font-size:25px;text-align:center;padding:12px 0;}
+.nav{text-align:center;}
+.nav li{width:33.33333333333333%;height:30px;padding:4px 0;border:1px solid #ccc;border-right:none;float:left;cursor: pointer;}
+.nav li:hover{background:#ccc}
+.nav li:last-child{border-right:1px solid #ccc;}
+.nav li>a{font-size:13px;font-weight:bold;color:#4e3517;}
+
+/* ==tgl_btn== */
+#tgl_btn{float:right;width:20px;height:20px;position:relative;margin:-117px 10px;cursor: pointer;}
+#tgl_btn>li{width:100%;height:3px;background:#90caf4;position:absolute;float:left;}
+#tgl_btn>li:nth-child(1){top:0;}
+#tgl_btn>li:nth-child(2){top:50%;transform:translateY(-50%);}
+#tgl_btn>li:nth-child(3){bottom:0;}
+
+/* ==search== */
+.search{position: relative;}
+input{width:88.88888888888889%;height:30px;margin:20px 0;position:absolute;top:0;left:5.555555555555556%;text-align:center;border:2px solid #90caf4;border-radius:5px;}
+input:focus{outline:none;}
+
+
+/* ==section== */
+.section{margin-top:100px;position: relative;}
+.section .not_li{border-bottom:2px solid #ccc;position:relative;padding:25px;margin:20px;}
+.section>div>ul>li>a{position:absolute;top:-10px;left:90px;}
+.section>div>ul>li>a>p{font-size:15px;}
+.day{text-align:center;font-size:14px;position:absolute;bottom:15px;left:90px;}
+.not_num{position:absolute;top:5px;left:5px;}
+
+.page{text-align:center;}
+.page>div{display:inline-block;padding:0 20px;}
+.page>p{color:#ccc;display:inline-block;padding:0 5px;margin-top:20px;cursor: pointer;}
+.page>p:first-child{color:black;}
+
+.section>div>.menu_nav{width:100%;display:none;background:rgba(0,0,0,0.5);position:absolute;top:-180px;right:0;}
+.section>div>.menu_nav>ul{background:#90caf4;width:70%;height:1000px;float:right;position:relative;}
+.section>div>.menu_nav>ul>li{padding:25px;border-bottom:2px solid white;}
+.section>div>.menu_nav>ul>li:first-child{border-bottom:none;position:absolute;left:-70px;}
+.section>div>.menu_nav>ul>li:nth-child(6){padding-left:13px;}
+.section>div>.menu_nav>ul>li>a{color:#4e3517;font-size:17px;font-weight:bolder;}
+.section>div>.menu_nav>ul>li>span{font-size:30px;color:white;cursor: pointer;}
+.section>div>.menu_nav>ul>.lang{float:left;padding:0;margin:30px 13px;border-bottom:none;}
+.section>div>.menu_nav>ul>.sns_logo{float:left;position:absolute;top:350px;margin-left:15px;}
+
+

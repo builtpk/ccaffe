@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CCAFFE</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon.png">
+
+    <!-- ==폰트== -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean" rel="stylesheet">
+    <!-- ==스크립트== -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            $('.answer').hide();
+            $('.q1').click(function(){
+                $('.a1').slideToggle();
+            });
+            $('.q2').click(function(){
+                $('.a2').slideToggle();
+            });
+            $('.q3').click(function(){
+                $('.a3').slideToggle();
+            });
+            $('.q4').click(function(){
+                $('.a4').slideToggle();
+            });
+            $('.q5').click(function(){
+                $('.a5').slideToggle();
+            });
+        })
+    </script>
+    <!-- ===css스타일=== -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/notice.css">
+    <!-- ==스타일== -->
+    <style>
+        .section{
+            width:68%;
+            margin:50px auto;
+        }
+        h2{
+            color:darkblue;
+            font-size:28px;
+            font-weight:bolder;
+        }
+        p{
+            color:maroon;
+            font-size:18px;
+            font-weight:bold;
+        }
+        .quest{
+            color:yellow;
+            font-weight:bold;
+            background:#4E3517;
+            border:1px solid black;
+            padding:10px;
+            cursor: pointer;
+        }
+        .answer{
+            color:black;
+            font-weight:bold;
+            background:lightgray;
+            border:1px solid black;
+            padding:10px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div id="logo">
+                <a href="index.html"><h1 class="logo_tit">CCAFFE</h1></a>
+                <a href="#"><img src="images/logo.png" alt="로고"></a>
+            </div>
+            <div class="notice">
+                <h1 class="not_tit">CONTACT</h1>
+            </div>
+            <nav class="nav">
+                <ul class="clearfix">
+                    <li><a href="contact1.html">개설안내</a></li>
+                    <li><a href="contact2.html">가맹문의</a></li>
+                    <li><a href="contact3.html">투자안내</a></li>
+                </ul>
+            </nav>
+            <ul id="tgl_btn">
+                <li id="line01"></li>
+                <li id="line02"></li>
+                <li id="line03"></li>
+            </ul>
+        </header>
+        <section class="section">
+            <div>
+                <h2>가맹 문의 F&Q</h2>
+                <br>
+                <p>
+                    가맹점 개설과 관련된 궁금증을 해결해 드립니다.
+                    <br>
+                    예비 창업자분들이 자주 하시는 질문입니다.
+                </p>
+                <br>
+                <br>
+            </div>
+            <div class="qna">
+                <div class="quest q1">Q.타인에게 점포의 양도와 인수가 가능합니까?</div>
+                <div class="answer a1">
+                    점포 양도는 본사와의 협의 하에 가능합니다.
+                    <br>
+                    이 경우 인수자는 본사에 가맹비와 계약 이행 보증금을 납부하셔야 하며
+                    <br>
+                    본사와의 협의 없이 단독으로 명의 변경 시에는 가맹계약 해지의 사유가 됩니다.
+                </div>
+                <div class="quest q2">Q.로열티란 무엇이며 비용은 얼마입니까?</div>
+                <div class="answer a2">
+                    로열티란 본사가 가맹점에게 상호, 상표 사용료 및 경영지원에 대한 대가로 받는 것으로
+                    <br>
+                    저희 브랜드의 로열티는 업계 최저 수준입니다.
+                    <br>
+                    이 금액은 본사와 가맹점의 발전을 위해 재투자되고 있습니다.
+                </div>
+                <div class="quest q3">Q.매장 오픈 후 사후관리는 어떤 방식으로 이루어집니까?</div>
+                <div class="answer a3">
+                    지속적으로 홍보를 통하여 매출 증가를 도모하고 매장 내 문제점을 파악하여
+                    <br>
+                    개선하며 고객의 니즈와 트렌드를 반영한 메뉴 개발 등 매장의 운영을 원할하게 하기 위한
+                    <br>
+                    지원을 합니다
+                </div>
+                <div class="quest q4">Q.가맹 계약 후 매장 오픈까지 소요되는 기간은 얼마입니까?</div>
+                <div class="answer a4">
+                    매장의 특성과 규모에 따라 다소 차이가 나지만 일반적으로 가맹 계약 후, 매장 오픈까지
+                    <br>
+                    총 소요기간은 20일 전후 입니다.
+                    <br>
+                    이 기간동안 인테리어 공사 및 조리/서비스 그리고 위생관리 교육등이 이루어집니다.
+                </div>
+                <div class="quest q5">Q.가맹점 오픈에 필요한 매장의 규모는 어느정도 입니까?</div>
+                <div class="answer a5">
+                    각 상권의 특성에 따라 점포 유형이 달라질 수 있으며 규모 또한 유동적으로 달라지게 됩니다.
+                    <br>
+                    테이크아웃 매장의 경우 최소면적이 10평이면 충분한 규모입니다.
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

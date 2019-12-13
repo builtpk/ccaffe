@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ccaffe</title>
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon.png">
+
+    <!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean" rel="stylesheet">
+
+    <!-- 자바스트립트/jQuery 시작-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/index.js"></script>
+    <!-- 자바스크립트/jQuery 끝 -->
+    
+    <!-- 초기화 시작-->
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.css">
+
+    <!-- 초기화 끝 -->
+
+    <!-- 내부 스타일 시작 -->
+    <style>
+        /* 헤더 */
+        .clearfix:after{display:block;content:"";clear:both;}
+        header{height:7.8125%;display:flex;flex-flow:row nowrap;padding:0 2.777777777777778%;}
+        header>div{flex:1;}
+        header>div#logo{display:flex;align-items:center;}
+        header>div#logo2{display:flex;align-items:center;justify-content: center;}
+        header>div#logo2 span{color:#4E3517;font-weight:bolder;font-size:1.3rem;}
+        header>div#tgl_btn{display:flex;align-items:center;justify-content:flex-end;}
+        #tgl_btn>ul{width:30px;height:30px;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;}
+        #tgl_btn>ul>li{width:100%;height:4px;border-radius:2px;background:#90CAF4;}
+
+        #nav{position:fixed;left:0;top:0;
+            width:100%;height:100%;z-index:100;background:rgba(0,0,0,0.8);
+            display:flex;justify-content: flex-end;}
+        #nav_box{background:#90CAF4;height:100%;width:75%;}
+        #nav_close {color:white;float:left;
+            text-indent: -40px;cursor: pointer;font-size: 2rem;}
+        .nav1{display:block;padding:8% 18%;border-bottom:1px solid rgba(255,255,255,0.4);}
+        .nav1>a{font-size:1.2rem;color:black;}
+        .nav2{display:flex;margin-left:13.88888888888889%}
+        .nav2>a{padding: 0.133%;display:block;}
+        /* 여기 디스플레이 블록 했음 */
+
+        /* 섹션 */
+        section{background:black;}
+        .swiper-slide>img{width:110%;height:100%;}
+        .banner img{width:100%;height:auto;}
+        img{display:block;}
+        .swiper-slide>div{width:100%;position:relative;background:red;}
+        .swiper-slide>div img{width:100%;}
+        .swiper-slide>div>div{position:absolute;left:13.88888888888889%;bottom:13.88888888888889%;z-index:5;width:100%;}
+        .swiper-slide>div>div>h3{background:#4E3517;color:white;display:inline-block;font-size:1.5rem;font-weight:bold;}
+        .swiper-slide>div>div>h4{background:#407587;color:white;display:inline-block;font-size:1.5rem;font-weight:bold;}
+        .swiper-slide>div>div>h5{background:#DAC5AA;color:black;display:inline-block;font-size:1.5rem;font-weight:bold;}
+        .swiper-slide>div>div>p{font-size:1.2rem;font-weight:bold;color:white;text-shadow:1px 1px 3px black;}
+
+        .banner_youtube{position:relative;width:100%;height:0;padding-bottom:56.25%;}
+        .banner_youtube iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
+        .banner>div{position:relative;max-width:100%;height:auto;}
+        .banner>div>img{max-width:100%;height:auto;}
+        .banner>div>p{position:absolute;max-width:100%;height:auto;}
+        .banner1 p{color:white;font-size:1rem;right:20px;bottom:20%;text-shadow: 1px 1px 3px black;}
+        .banner1 span{color:white;background:#90CAF4;font-size:1rem;font-weight:400;}
+        .banner2 p{background:black;color:white;font-size:1.5rem;top:40%;left:20%;}
+        
+
+        /* 본문 끝 */
+    </style>
+    <!-- 내부 스타일 끝 -->
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="로고이미지">
+                </a>
+            </div>
+            <div id="logo2">
+                <a href="index.html">
+                    <span>CCAFFE</span>
+                </a>
+            </div>
+            <div id="tgl_btn">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </header>
+        <nav id="nav">
+            <div id="nav_box">
+                <span id="nav_close">X</span>
+                <div class="nav1">
+                    <a href="menu.html">Menu</a>
+                </div>
+                <div class="nav1">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="nav1">
+                    <a href="notice.html">Notice</a>
+                </div>
+                <div class="nav1">
+                    <a href="contact1.html">Contact</a>
+                </div>
+
+                <div class="nav2">
+                    <a href="https://www.youtube.com/watch?v=ZEum8ebGjDI">
+                        <img src="images/sns_youtube.svg" alt="유튜브 바로가기">
+                    </a>
+                    <a href="https://www.instagram.com/explore/tags/%EC%B9%B4%ED%8E%98/">
+                        <img src="images/sns_instagram.svg" alt="인스타 바로가기">
+                    </a>
+                    <a href="https://www.facebook.com/groups/codingeverybody/">
+                        <img src="images/sns_facebook.svg" alt="페북 바로가기">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- 본문시작 -->
+        <section id="section">
+        <!-- Swiper -->
+        <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <a href="menu.html">
+                                <img src="images/banner01.jpg" alt="배너1 카푸치노">
+                            </a>
+                            <div>
+                                <h3>&nbsp;SIMPLE BREAKFAST&nbsp;</h3><br>
+                                <p>CCAFFE에서 쉽고 빠르게</p>
+                                <p>아침식사를 챙겨보세요!</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <a href="contact.html">
+                                <img src="images/banner02.jpg" alt="배너2 카푸치노">
+                            </a>
+                            <div>
+                                <h4>&nbsp;STUDY ROOM&nbsp;</h3><br>
+                                <p>스터디룸 예약</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <a href="menu.html">
+                                <img src="images/banner03.jpg" alt="배너3 신선한 원두">
+                            </a>
+                            <div>
+                                <h5>&nbsp;FRESH COFFEE&nbsp;</h3><br>
+                                <p>매일 가는 원두로 신선한 향을</p>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+    <!-- swiper 끝 -->
+            <div class="banner_youtube">
+                <iframe  src="https://www.youtube.com/embed/XAoJIICql2A?&autoplay=1&amp;loop=1;playlist=XAoJIICql2A" frameborder="0" allow="allowfullscreen" allowfullscreen></iframe>
+            </div>
+            <div class="banner banner1">
+                <div>
+                    <img src="images/banner04.jpg" alt="연락">
+                    <p>개인 컵을 가지고 오면 <span>Take-out</span>시 <span>100원 할인!</span></span></p>
+                </div>
+            </div>
+            <div class="banner banner2">
+                <div>
+                    <img src="images/banner05.jpg" alt="이벤트 페이지">
+                    <p>&nbsp;컵 안에 담긴 휴식, CCAFFE&nbsp;</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 본문 끝 -->
+    </div>
+</body>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    });
+</script>
+<!-- Swiper 끝 -->
+</html>
